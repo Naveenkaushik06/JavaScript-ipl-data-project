@@ -1,11 +1,25 @@
 {
-    "name": "ipl",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "MIT"
+  "name": "ipl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/mountblue/cohort-21-ruby/naveen/ipl.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mountblue/cohort-21-ruby/naveen/ipl/issues"
+  },
+  "homepage": "https://gitlab.com/mountblue/cohort-21-ruby/naveen/ipl#readme",
+  "devDependencies": {
+    "package.json": "^2.0.1"
+  },
+  "dependencies": {
+    "papaparse": "^5.3.2"
+  }
 }

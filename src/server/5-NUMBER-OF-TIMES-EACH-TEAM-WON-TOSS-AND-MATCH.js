@@ -13,11 +13,6 @@ const delivery = deliveriesData["data"];
 console.log(matchData);
 
 // Find the number of times each team won the toss and also won the match
-// function deliveriesInSingleYear(matches, deliveries, year) {
-//     let Id = matches.filter(match => match.season == year).map(match => parseInt(match.id));
-
-//     return deliveries.filter(delivery => Id.indexOf(parseInt(delivery.match_id)) !== -1)
-// }
 
 function teamWonTossAndMatch(matches) {
     if (Array.isArray(matches)) {

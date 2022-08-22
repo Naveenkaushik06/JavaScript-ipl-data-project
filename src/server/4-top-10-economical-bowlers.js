@@ -10,9 +10,13 @@ const deliveriesData = papaParse.parse(deliveries, {
 });
 const match = matchData["data"];
 const delivery = deliveriesData["data"];
-console.log(matchData);
 
 // 4. Top 10 economical bowlers in the year 2015
+function deliveriesInSingleYear(matches, deliveries, year) {
+    let Id = matches.filter(match => match.season == year).map(match => parseInt(match.id));
+
+    return deliveries.filter(delivery => Id.indexOf(parseInt(delivery.match_id)) !== -1)
+}
 
 function top10EconomyBowlerIn2015(matches, deliveries, year) {
     if (Array.isArray(matches) && Array.isArray(deliveries) && year >= 2008 && year <= 2017) {

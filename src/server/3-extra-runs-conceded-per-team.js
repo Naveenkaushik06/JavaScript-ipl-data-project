@@ -10,7 +10,7 @@ const deliveriesData = papaParse.parse(deliveries, {
 });
 const match = matchData["data"];
 const delivery = deliveriesData["data"];
-console.log(matchData);
+// console.log(matchData);
 
 
 // 3. Extra runs conceded per team in the year 2016

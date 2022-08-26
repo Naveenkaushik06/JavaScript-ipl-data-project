@@ -1,7 +1,7 @@
-let papaParse = require('/home/naveen/Desktop/Naveen-js-ipl-data-project /node_modules/papaparse');
+let papaParse = require('/home/naveen/Desktop/Naveen-js-ipl-data-project/node_modules/papaparse');
 let fs = require('fs');
-let matches = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project /src/data/matches.csv', 'utf-8');
-let deliveries = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project /src/data/deliveries.csv', 'utf-8');
+let matches = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project/src/data/matches.csv', 'utf-8');
+let deliveries = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project/src/data/deliveries.csv', 'utf-8');
 const matchData = papaParse.parse(matches, {
     header: true
 });

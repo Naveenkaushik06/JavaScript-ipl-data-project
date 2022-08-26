@@ -1,7 +1,7 @@
-let papaParse = require('/home/naveen/Desktop/Naveen-js-ipl-data-project /node_modules/papaparse');
+let papaParse = require('/home/naveen/Desktop/Naveen-js-ipl-data-project/node_modules/papaparse');
 let fs = require('fs');
-let matches = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project /src/data/matches.csv', 'utf-8');
-let deliveries = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project /src/data/deliveries.csv', 'utf-8');
+let matches = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project/src/data/matches.csv', 'utf-8');
+let deliveries = fs.readFileSync('/home/naveen/Desktop/Naveen-js-ipl-data-project/src/data/deliveries.csv', 'utf-8');
 const matchData = papaParse.parse(matches, {
     header: true
 });
@@ -58,7 +58,7 @@ function top10EconomyBowlerIn2015(matches, deliveries, year) {
                 }
             });
     } else {
-        fs.writeFile("/home/naveen/Desktop/Naveen-js-ipl-data-project /src/server/4-top-10-economical-bowlers.js", JSON.stringify({}),
+        fs.writeFile("/home/naveen/Desktop/Naveen-js-ipl-data-project/src/server/4-top-10-economical-bowlers.js", JSON.stringify({}),
             (err) => {
                 if (err)
                     console.log(err);

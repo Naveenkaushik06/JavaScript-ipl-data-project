@@ -49,7 +49,7 @@ function top10EconomyBowlerIn2015(matches, deliveries, year) {
             .sort((bowler1, bowler2) => {
                 return bowler1[1].economy - bowler2[1].economy
             }).slice(0, 10));
-        fs.writeFile("../public/output/topTenEconomicalBowler.json", JSON.stringify(economy),
+        fs.writeFile("../public/output/top10EconomyBowlerIn2015.json", JSON.stringify(economy),
             (err) => {
                 if (err)
                     console.log(err);

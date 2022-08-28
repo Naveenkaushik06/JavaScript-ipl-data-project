@@ -24,7 +24,7 @@ function matchPlayedPerYear(match) {
                 acc[curr.season] = 1;
             return acc;
         }, {});
-        fs.writeFile("../public/output/match.json", JSON.stringify(seasonWise),
+        fs.writeFile("../public/output/matchPlayedPerYear.json", JSON.stringify(seasonWise),
             (err) => {
                 if (err)
                     console.log(err);

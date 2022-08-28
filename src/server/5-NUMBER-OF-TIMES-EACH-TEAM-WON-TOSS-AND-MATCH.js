@@ -28,7 +28,7 @@ function teamWonTossAndMatch(matches) {
             }
             return acc;
         }, {})
-        fs.writeFile("../public/output/NoOfTimesEachTeamWonTossAndMatch.json", JSON.stringify(WonTossAndMatch),
+        fs.writeFile("../public/output/teamWonTossAndMatch(match.json", JSON.stringify(WonTossAndMatch),
             (err) => {
                 if (err)
                     console.log(err);

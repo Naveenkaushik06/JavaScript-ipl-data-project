@@ -33,7 +33,7 @@ function matchesWonPerTeamPerYear(match) {
 
 
         }, {})
-        fs.writeFile("../public/output/matchwon.json", JSON.stringify(teamWiseWinner),
+        fs.writeFile("../public/output/matchesWonPerTeamPerYear.json", JSON.stringify(teamWiseWinner),
             (err) => {
                 if (err)
                     console.log(err);

@@ -31,7 +31,7 @@ function extraRunIn2016TeamWise(matches, deliveries, year) {
             }
             return acc;
         }, {});
-        fs.writeFile("../public/output/extrarunconceded.json", JSON.stringify(extraRun),
+        fs.writeFile("../public/output/extraRunIn2016TeamWise.json", JSON.stringify(extraRun),
             (err) => {
                 if (err)
                     console.log(err);

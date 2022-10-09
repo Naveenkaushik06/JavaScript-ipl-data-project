@@ -12,7 +12,7 @@ const match = matchData["data"];
 const delivery = deliveriesData["data"];
 console.log(matchData);
 
-// 5. Find the bowler with the best economy in super overs.
+//  Find the bowler with the best economy in super overs.
 
 const bestBowlerInSuperover = function(deliveries) {
     if (Array.isArray(deliveries)) {
